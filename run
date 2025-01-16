@@ -1,0 +1,17 @@
+sudo pacman -S --needed base-devel git
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+cd ..
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
+
+paru -S zen-browser-bin zen-twilight-bin cava extension-manager spotify spotify-adblock
+
+sudo pacman -S nemo blender godot ghostty
+
+git clone --depth 1 https://github.com/prasanthrangan/hyprdots ~/HyDE
+cd ~/HyDE/Scripts
+./install.sh
