@@ -1,7 +1,5 @@
 sudo pacman -S --needed base-devel git
 
-paru -S zen-browser-bin zen-twilight-bin cava extension-manager spotify spotify-adblock spicetify-cli obs-studio  kwin-effects-forceblur
-
 sudo pacman -S nemo nemo-fileroller blender godot ghostty cmatrix lolcat
 
 sh <(curl -L https://nixos.org/nix/install) --daemon
@@ -11,3 +9,5 @@ cd ~/HyDE/Scripts
 ./install.sh
 
 curl -fsSL https://christitus.com/linux | sh 
+
+paru -S zen-browser-bin zen-twilight-bin cava extension-manager spotify spotify-adblock spicetify-cli obs-studio  kwin-effects-forceblur
