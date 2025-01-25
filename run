@@ -2,6 +2,9 @@ sudo pacman -S --needed base-devel git
 
 sudo pacman -S nemo nemo-fileroller blender godot ghostty cmatrix lolcat gparted zed obs-studio starship
 
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+
 git clone https://github.com/NRK-496/Arch-linux-setup.git ~/setup-for-arch
 cd setup-for-arch
 mv starship.toml ~/.config
@@ -14,6 +17,10 @@ git clone --depth 1 https://github.com/prasanthrangan/hyprdots ~/HyDE
 cd ~/HyDE/Scripts
 ./install.sh
 
-curl -fsSL https://christitus.com/linux | sh 
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
 
 paru -S zen-browser-bin zen-twilight-bin cava extension-manager spotify spotify-adblock spicetify-cli obs-studio kwin-effects-forceblur cemu lime3ds ryujinx-git melonds-bin vbam-git dolphin-emu-git
+
+curl -fsSL https://christitus.com/linux | sh  
