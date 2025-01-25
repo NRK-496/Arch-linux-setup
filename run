@@ -1,6 +1,12 @@
 sudo pacman -S --needed base-devel git
 
-sudo pacman -S nemo nemo-fileroller blender godot ghostty cmatrix lolcat gparted zed obs-studio
+sudo pacman -S nemo nemo-fileroller blender godot ghostty cmatrix lolcat gparted zed obs-studio starship
+
+git clone https://github.com/NRK-496/Arch-linux-setup.git ~/setup-for-arch
+cd setup-for-arch
+mv starship.toml ~/.config
+cd ..
+rm -rf setup-for-arch
 
 sh <(curl -L https://nixos.org/nix/install) --daemon
 
