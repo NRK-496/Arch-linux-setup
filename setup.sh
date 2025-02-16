@@ -24,7 +24,7 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 
-paru -S zen-browser-bin zen-twilight-bin cava extension-manager spotify spotify-adblock spicetify-cli obs-studio kwin-effects-forceblur cemu lime3ds ryujinx-git melonds-bin vbam-git dolphin-emu-git
+paru -S zen-browser-bin zen-twilight-bin cava extension-manager spotify spotify-adblock spicetify-cli obs-studio kwin-effects-forceblur cemu lime3ds ryujinx-git melonds-bin vbam-git dolphin-emu-git tty-clock
 
 curl -fsSL https://christitus.com/linux | sh
 
