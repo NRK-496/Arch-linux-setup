@@ -18,14 +18,12 @@ cd ~/HyDE/Scripts
 
 cd setup-for-arch
 mv Kurzgesagt_Wallpaper_Earth-with-Rings.png ~/.config/hyde/themes/"Catppuccin Mocha"/wallpapers/
-cd..
+cd +5
 
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 
-paru -S zen-browser-bin zen-twilight-bin cava extension-manager spotify spotify-adblock spicetify-cli obs-studio kwin-effects-forceblur cemu lime3ds ryujinx-git melonds-bin vbam-git dolphin-emu-git tty-clock
-
-curl -fsSL https://christitus.com/linux | sh
-
+paru -S zen-browser-bin cava extension-manager spotify spotify-adblock spicetify-cli obs-studio kwin-effects-forceblur cemu azahar ryujinx-git melonds-bin mgba-qt dolphin-emu-git tty-clock
 rm -rf setup-for-arch
+curl -fsSL https://christitus.com/linux | sh
