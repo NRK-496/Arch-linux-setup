@@ -8,6 +8,8 @@ rm -rf ~/.config/nvim/.git
 git clone https://github.com/NRK-496/Arch-linux-setup.git ~/setup-for-arch
 cd setup-for-arch
 mv starship.toml ~/.config
+./virtualization.sh
+./color-build.sh -f Mocha
 cd ..
 
 sh <(curl -L https://nixos.org/nix/install) --daemon
@@ -24,6 +26,5 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 
-paru -S zen-browser-bin cava extension-manager spotify spotify-adblock spicetify-cli obs-studio kwin-effects-forceblur cemu azahar ryujinx-git melonds-bin mgba-qt dolphin-emu-git tty-clock
+paru -S zen-browser-bin zen-twilight-bin cava extension-manager spotify spotify-adblock spicetify-cli obs-studio kwin-effects-forceblur cemu azahar ryujinx-git melonds-bin mgba-qt dolphin-emu-git tty-clock
 rm -rf setup-for-arch
-curl -fsSL https://christitus.com/linux | sh
