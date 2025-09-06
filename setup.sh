@@ -1,6 +1,6 @@
 sudo pacman -S --needed base-devel git
 
-sudo pacman -S nemo nemo-fileroller blender godot ghostty cmatrix lolcat gparted zed obs-studio starship
+sudo pacman -S nemo nemo-fileroller blender godot ghostty cmatrix lolcat gparted zed obs-studio starship kdeconnect qbittorrent
 
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
@@ -26,5 +26,5 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 
-paru -S zen-browser-bin zen-twilight-bin cava extension-manager spotify spotify-adblock spicetify-cli obs-studio kwin-effects-forceblur cemu azahar ryujinx-git melonds-bin mgba-qt dolphin-emu-git tty-clock
+paru -S zen-browser-bin zen-twilight-bin vesktop-bin cava extension-manager spotify spotify-adblock spicetify-cli obs-studio kwin-effects-forceblur cemu azahar ryujinx-git melonds-bin mgba-qt dolphin-emu-git wiiudownloader tty-clock pipes.sh 
 rm -rf setup-for-arch
